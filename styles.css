@@ -149,8 +149,8 @@ spline-viewer {
     background-color: #E7D0FF;
 
 clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
-
 }
+
 
 .shadow::before{
     position: absolute;
