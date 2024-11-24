@@ -20,7 +20,7 @@
 }
 
 body {
-    background-color: #F8F8F8;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 
@@ -29,16 +29,18 @@ body {
 
 
 spline-viewer {
-    position: absolute;
-    float: left;
-    clear: both;
-    width: 400px;
-    height: 400px;
+    position: absolute; 
     z-index: 0;
-    right: 15vw;
-    padding-top: 200px;
-    background-color: transparent;
+    left: 50%; 
+    transform: translateX(-50%);
+    float: center;
+    clear: both;
 
+    width: 100%;
+    max-width: 100rem;
+    height: 400px;
+ 
+    margin-top: 0px;
     /* border: 5px solid black; */
 }
 
@@ -75,16 +77,6 @@ spline-viewer {
 
 }
 
-.heart {
-    margin-left: auto;
-    margin-right: 1.25rem;
-}
-
-.basket {
-    margin-right: 1.25rem;
-    padding-right: 1.875rem;
-}
-
 /* Style the links inside the navigation bar */
 .topnav a {
     font-weight: bold;
@@ -111,6 +103,70 @@ spline-viewer {
     border-bottom-color: black;
 }
 
+.heart {
+    margin-left: auto;
+    margin-right: 1.25rem;
+    border-bottom-width: 3px;
+}
+
+.basket {
+    margin-right: 1.875rem;
+}
+
+
+
+.banner-corner{
+    position: absolute; 
+    z-index: 10;
+    left: 50%; 
+    transform: translateX(-50%);
+    float: center;
+    clear: both;
+
+    width: 100%;
+    max-width: 100rem;
+    height: 400px;
+ 
+    margin-top: 0px;
+    background-color: #F6F6F6;
+
+    clip-path: polygon(100% 90%, 0% 100%, 100% 100%);
+}
+
+.shadow {
+    position: absolute; 
+    z-index: -1;
+    left: 50%; 
+    transform: translateX(-50%);
+    float: center;
+    clear: both;
+
+    width: 100%;
+    max-width: 100rem;
+    height: 400px;
+ 
+    margin-top: 0px;
+    background-color: #E7D0FF;
+
+clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+
+}
+
+.shadow::before{
+    position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height:40px;
+  top: 101%;
+  left: 0px;
+  background-color: transparent;
+    
+    transform: rotate(-3deg);
+    box-shadow:  0 -20px 100px 20px#000000;
+
+}
+
 
 .content {
     width: 100%;
@@ -120,6 +176,21 @@ spline-viewer {
     margin: 0px auto;
 }
 
+.back-colour {
+    width: 100%;
+    max-width: 100rem;
+    height: 90%;
+
+    position: absolute; 
+    z-index: -10;
+    left: 50%; 
+    transform: translateX(-50%);
+    float: center;
+    clear: both;
+    background-color:#F6F6F6;
+}
+
+
 .front {
     position: relative;
     z-index: 1;
@@ -128,7 +199,7 @@ spline-viewer {
 .textbox {
     padding-left: 6.875rem;;
     padding-right: 50vw;
-    padding-top: 150px;
+    padding-top: 75px;
     padding-bottom: 150px;
 }
 
