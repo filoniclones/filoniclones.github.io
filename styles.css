@@ -1,15 +1,29 @@
 @font-face {
     font-family: 'cera_pro';
-    src: url('cerapro-regular-webfont.woff2') format('woff2'),
-        url('cerapro-regular-webfont.woff') format('woff');
+    src: url('fonts/bold/fontspring-demo-cerapro-medium-webfont.woff2') format('woff2'),
+         url('fonts/bold/fontspring-demo-cerapro-medium-webfont.woff') format('woff');
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cera_pro';
+    src: url('fonts/cerapro-regular-webfont.woff2') format('woff2'),
+        url('fonts/cerapro-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 * {
     font-family: 'cera_pro', sans-serif;
-    background-color: aliceblue;
+    font-weight: normal;
+}
+
+body {
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+
 }
 
 
@@ -20,12 +34,114 @@ spline-viewer {
     clear: both;
     width: 400px;
     height: 400px;
-    z-index: 2;
+    z-index: 0;
     right: 15vw;
     padding-top: 200px;
     background-color: transparent;
 
     /* border: 5px solid black; */
+}
+
+
+
+.main-bar-container {
+    background-color: rgb(255, 213, 2);
+    height: 4.6875rem;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+
+    height: 4.6875rem;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+
+    width: 100%;
+    max-width: 100rem;
+
+
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.topnav img {
+    float: left;
+    margin-right: 4.0625rem;
+    padding-left: 1.875rem;
+
+}
+
+.heart {
+    margin-left: auto;
+    margin-right: 1.25rem;
+}
+
+.basket {
+    margin-right: 1.25rem;
+    padding-right: 1.875rem;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    font-weight: bold;
+
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+
+    position: static;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: inherit;
+
+    margin-inline-end: 40px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    border-bottom-color: black;
+}
+
+
+.content {
+    width: 100%;
+    max-width: 100rem;
+    position: relative;
+    z-index: 1;
+    margin: 0px auto;
+}
+
+.front {
+    position: relative;
+    z-index: 1;
+}
+
+.textbox {
+    padding-left: 6.875rem;;
+    padding-right: 50vw;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2.6875rem;
+}
+
+h2 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
 }
 
 
@@ -46,27 +162,7 @@ spline-viewer {
     /* border: 2px solid rgb(96 139 168); */
     border-radius: 5px;
     /* background-color: rgb(96 139 168 / 0.2); */
-
-
 }
-
-.front {
-    z-index: 1;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-.textbox {
-    padding-left: 15vw;
-    padding-right: 50vw;
-    padding-top: 230px;
-    padding-bottom: 100px;
-
-}
-
-
 
 
 
