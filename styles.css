@@ -234,6 +234,15 @@ h2 {
     /* background-color: rgb(96 139 168 / 0.2); */
 }
 
+.credits {
+    width: 100%;
+}
+
+.credits p {
+    text-align: right;
+    padding-right: 1rem;
+}
+
 
 
 
